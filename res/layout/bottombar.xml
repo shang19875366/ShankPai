@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bottombar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/bottombar_height"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/darker_gray">
+
+    <com.shankpai.view.RotateImageView
+        android:id="@+id/image_thumbnail"
+        android:layout_width="@dimen/simgwidth"
+        android:layout_height="@dimen/simgheight"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dip"/>
+
+     <RelativeLayout
+	        android:id="@+id/imb_bk"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/capture" >
+		    <com.shankpai.view.RotateImageView
+		        android:id="@+id/imb_start"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:duplicateParentState="true"
+		        android:layout_centerInParent="true"
+		        android:src="@drawable/camera_mode_shutter" />
+	    </RelativeLayout>
+	 
+     <ImageButton
+         android:id="@+id/settings"
+         android:src="@drawable/ic_launcher"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="20dip"
+         android:visibility="gone"/>
+</RelativeLayout>

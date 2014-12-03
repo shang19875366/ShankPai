@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/cameraView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:keepScreenOn="true" />
+   
+    <LinearLayout
+        android:id="@+id/instro" 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/bottombar_height"
+        android:layout_marginBottom="@dimen/bottombar_height"
+        android:visibility="gone" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:textColor="@android:color/white"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size"
+                android:text="Beautify" />
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:textColor="@android:color/white"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size"
+                android:text="Film" />
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:textColor="@android:color/white"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size"
+                android:text="Lomo" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:textColor="@android:color/white"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size"
+                android:text="Black white" />
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:textColor="@android:color/white"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size"
+                android:text="Original" />
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:textColor="@android:color/white"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size"
+                android:text="Sketch" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:textColor="@android:color/white"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size"
+                android:text="Process" />
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:textColor="@android:color/white"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size"
+                android:text="Transfer" />
+            <TextView
+                android:id="@+id/t9"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                android:textColor="@android:color/white"
+                android:paddingRight="10dip"
+                android:paddingBottom="10dip"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size"
+                android:text="Instant" />
+        </LinearLayout>
+    </LinearLayout>
+    
+	<ImageButton
+	    android:id="@+id/imgbt_preview"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="@dimen/bottombar_height"
+	    android:background="@drawable/preview" />
+    
+     <include layout="@layout/topbar"/> 
+     <include layout="@layout/bottombar"/> 
+
+</RelativeLayout>
